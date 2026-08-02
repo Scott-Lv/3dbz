@@ -33,7 +33,7 @@
 		<font face="Arial Unicode MS" size="5" color="#808080">First Brillouin Zone of 
 		Graphene structure, 
 		<br>
-&nbsp;&nbsp;&nbsp; k points path: ¦£¨CM¨CK¨C¦£  </font>
+&nbsp;&nbsp;&nbsp; k points path: Gamma - M - K - Gamma  </font>
 		</td>
 		<td width="11%" height="35">
 		</td>
@@ -193,8 +193,8 @@
   viewer.render();
   
 //k-points
-  viewer.addSphere({ center: {x: 0.000, y: 0.000, z: 0.000},radius: 0.04, color: '0xaabbcc' });     //¦£
-  viewer.addLabel("¦£", {position: {x:-0.300, y:-0.200, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 24});
+  viewer.addSphere({ center: {x: 0.000, y: 0.000, z: 0.000},radius: 0.04, color: '0xaabbcc' });     //Gamma
+  viewer.addLabel("Gamma", {position: {x:-0.300, y:-0.200, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 24});
   viewer.addSphere({ center: {x: 4.330, y: 0.000, z: 0.000},radius: 0.04, color: '0xaabbcc' });     //M
   viewer.addLabel("M", {position: {x: 4.330, y: 0.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
   viewer.addSphere({ center: {x: 4.330, y: 2.500, z: 0.000},radius: 0.04, color: '0xaabbcc' });     //K
