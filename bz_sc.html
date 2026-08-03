@@ -80,7 +80,6 @@
   viewer.zoomTo();
   viewer.render();
 
-
   viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 7.0,y: 0.0,z: 0.0},  radius:0.05,  color:'red',  fromCap:false, toCap:false});
   viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 0.0,y: 7.0,z: 0.0},  radius:0.05,  color:'lightgreen',  fromCap:false, toCap:false});
   viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 0.0,y: 0.0,z: 7.0},  radius:0.05,  color:'blue',  fromCap:false, toCap:false});
@@ -118,11 +117,11 @@
  viewer.render();
 
 //PATH
-	viewer.addSphere({ center: {x: 0.0, y: 0.0, z: 0.0}, radius: 0.07, color: 'red' });   //gama
+	viewer.addSphere({ center: {x: 0.0, y: 0.0, z: 0.0}, radius: 0.07, color: 'red' });   //gamma
 	viewer.addSphere({ center: {x: 0.0, y: 5.0, z: 0.0}, radius: 0.07, color: 'red' });   //X
 	viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 0.0}, radius: 0.07, color: 'red' });   //M
 	viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 5.0}, radius: 0.07, color: 'red' });   //R
-	viewer.addLabel("¦£", {position: {x: 0.0, y: 0.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
+	viewer.addLabel("Gamma", {position: {x: 0.0, y: 0.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
 	viewer.addLabel("X", {position: {x: 0.0, y: 5.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
 	viewer.addLabel("M", {position: {x: 5.0, y: 5.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
 	viewer.addLabel("R", {position: {x: 5.0, y: 5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});		
