@@ -1,0 +1,355 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta charset="UTF-8">
+<title>Crystal Structure in Solid State Physics with 3Dmol.js</title>
+<script src="./3Dmol-min.js"></script>
+</head>
+
+<body>
+<div align="center">
+<table border="0" width="89%" height="866">
+	<tr>
+		<td width="6%" height="84"></td>
+		<td height="84" colspan="2">
+		<p align="center">
+		  <b>
+		  <font color="#6699FF" size="6" face="Arial Unicode MS">First&nbsp; Brillouin&nbsp; Zone&nbsp; in&nbsp; Solid&nbsp; State&nbsp; Physics</font></b><hr color="#6699FF"></td>
+		<td width="11%" height="84"></td>
+	</tr>
+	<tr>
+		<td width="6%" height="35"></td>
+		<td height="35" bgcolor="#F5F5F5" colspan="2"><font face="Arial Unicode MS" size="5" color="#00FF00">&#10070; </font>
+		<font face="Arial Unicode MS" size="5" color="#808080">First Brillouin Zone of SC structure, 
+		<br>
+&nbsp;&nbsp;&nbsp; k points path:  Gamma-X-M-R-Gamma, M-R  </font>
+		</td>
+		<td width="11%" height="35">
+		</td>
+	</tr>
+	<tr>
+		<td width="6%"></td>
+		<td width="57%"><font size="5" face="Arial Unicode MS"> </font>
+		<blockquote>
+<div id="container-01" class="mol-container" style="width: 989px; height: 730px"></div>
+<style>
+.mol-container {
+  width: 1000px;
+  height:1000px;
+  position: relative;
+}
+</style>
+<script>
+  let element = document.querySelector('#container-01');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+//cubic atom  1-8
+//1 w
+  viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("0", {position: {x: 5.0, y: 5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//2 wa
+  viewer.addSphere({ center: {x: -5.0, y: 5.0, z: 5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("1", {position: {x: -5.0, y: 5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//3 wb
+  viewer.addSphere({ center: {x: -5.0, y: -5.0, z: 5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("2", {position: {x: -5.0, y: -5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//4 wc
+  viewer.addSphere({ center: {x: 5.0, y: -5.0, z: 5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("3", {position: {x: 5.0, y: -5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//5 wd
+  viewer.addSphere({ center: {x: 5.0, y: -5.0, z: -5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("4", {position: {x: 5.0, y: -5.0, z: -5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//6 we
+  viewer.addSphere({ center: {x: 5.0, y: 5.0, z: -5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("5", {position: {x: 5.0, y: 5.0, z: -5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//7 wf
+  viewer.addSphere({ center: {x: -5.0, y: 5.0, z: -5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("6", {position: {x: -5.0, y: 5.0, z: -5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+//8 wg
+  viewer.addSphere({ center: {x: -5.0, y: -5.0, z: -5.0}, radius: 0.01, color: 'pink' });
+//  viewer.addLabel("7", {position: {x: -5.0, y: -5.0, z: -5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'black',fontSize: 12});							  
+
+  viewer.zoomTo();
+  viewer.render();
+
+
+  viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 7.0,y: 0.0,z: 0.0},  radius:0.05,  color:'red',  fromCap:false, toCap:false});
+  viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 0.0,y: 7.0,z: 0.0},  radius:0.05,  color:'lightgreen',  fromCap:false, toCap:false});
+  viewer.addCylinder({start: {x: 0.0, y: 0.0, z: 0.0}, end: {x: 0.0,y: 0.0,z: 7.0},  radius:0.05,  color:'blue',  fromCap:false, toCap:false});
+ 
+  viewer.addLabel("bx", {position: {x: 7.6,y: 0.0,z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});							  
+  viewer.addLabel("by", {position: {x: 0.0,y: 7.6,z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'green',fontSize: 20});							  
+  viewer.addLabel("bz", {position: {x: 0.0,y: 0.0,z: 7.6}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'blue',fontSize: 20});							  
+
+ viewer.addArrow({
+   start: {x: 6.6, y: 0.0, z: 0.0},
+   end: {x: 8.0, y:  0.0, z:  0.0},
+   color: 'red',
+   radius: 0.05,
+   fromCap: 3,
+   toCap: 3
+ });
+ 
+  viewer.addArrow({
+   start: {x: 0.0, y: 6.6, z: 0.0},
+   end: {x: 0.0, y:  8.0, z:  0.0},
+   color: 'lightgreen',
+   radius: 0.05,
+   fromCap: 3,
+   toCap: 3
+ });
+ 
+  viewer.addArrow({
+   start: {x: 0.0, y: 0.0, z: 6.6},
+   end: {x: 0.0, y:  0.0, z:  8.0},
+   color: 'blue',
+   radius: 0.05,
+   fromCap: 3,
+   toCap: 3
+ });
+ viewer.render();
+
+//PATH
+	viewer.addSphere({ center: {x: 0.0, y: 0.0, z: 0.0}, radius: 0.07, color: 'red' });   //gama
+	viewer.addSphere({ center: {x: 0.0, y: 5.0, z: 0.0}, radius: 0.07, color: 'red' });   //X
+	viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 0.0}, radius: 0.07, color: 'red' });   //M
+	viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 5.0}, radius: 0.07, color: 'red' });   //R
+	viewer.addLabel("Γ", {position: {x: 0.0, y: 0.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
+	viewer.addLabel("X", {position: {x: 0.0, y: 5.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
+	viewer.addLabel("M", {position: {x: 5.0, y: 5.0, z: 0.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});							  
+	viewer.addLabel("R", {position: {x: 5.0, y: 5.0, z: 5.0}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 30});		
+
+	viewer.addLine({
+		start: {x: 0.0, y: 0.0, z: 0.0},
+		end: {x: 0.0, y: 5.0, z: 0.0},
+		color: 'red',
+		radius: 0.5
+		});  //gamma to X
+	
+		viewer.addLine({
+		start: {x: 0.0, y: 0.0, z: 0.0},
+		end: {x: 5.0, y: 5.0, z: 0.0},
+		color: 'red',
+		radius: 0.5
+		});  //gamma to M
+
+	viewer.addLine({
+        start: {x: 0.0, y: 0.0, z: 0.0},
+        end: {x: 5.0, y: 5.0, z: 5.0},
+        color: 'red',
+        radius: 0.5
+        });  //gamma to R
+
+    viewer.addLine({
+        start: {x: 5.0, y: 5.0, z: 5.0},
+        end: {x: 5.0, y: 5.0, z: 0.0},
+        color: 'red',
+		radius: 0.5
+        });  //R to M
+
+    viewer.addLine({
+	    start: {x: 5.0, y: 5.0, z: 0.0},
+        end: {x: 0.0, y: 5.0, z: 0.0},
+        radius:0.5,
+        color:'red'
+		});
+    viewer.render();  //M to X
+
+    viewer.addLine({
+        start: {x: 0.0, y: 5.0, z: 0.0},
+        end: {x: 5.0, y: 5.0, z: 5.0},
+        radius:0.5,
+        color: 'red'
+        });  //X to R
+
+ viewer.render(); 
+  
+//add plane
+function triangle(viewer) {
+        var vertices = [];
+        var normals = [];
+//        var colors = [];
+
+        //triangle
+        vertices.push(new $3Dmol.Vector3(  5.0,   5.0,  5.0));    //0
+        vertices.push(new $3Dmol.Vector3( -5.0,   5.0,  5.0));    //1
+        vertices.push(new $3Dmol.Vector3( -5.0,  -5.0,  5.0));    //2
+        vertices.push(new $3Dmol.Vector3(  5.0,  -5.0,  5.0));    //3
+        vertices.push(new $3Dmol.Vector3(  5.0,  -5.0, -5.0));    //4
+        vertices.push(new $3Dmol.Vector3(  5.0,   5.0, -5.0));    //5
+        vertices.push(new $3Dmol.Vector3( -5.0,   5.0, -5.0));    //6
+        vertices.push(new $3Dmol.Vector3( -5.0,  -5.0, -5.0));    //7
+
+        var faces1 = [ 0,2,1 ];   //z+ face
+        var faces2 = [ 0,2,3 ];   //z+ face
+
+        var faces3 = [ 0,6, 1 ];  //y+
+        var faces4 = [ 0,6, 5 ];  //y+
+			
+        var faces5 = [ 1,7,2 ];   //x-
+        var faces6 = [ 1,7,6 ];   //x-
+		
+        var faces7 = [ 2,4,3 ];   //y-
+        var faces8 = [ 2,4,7 ];   //y-
+		
+        var faces9 =  [ 3,5,0 ];  //x+
+        var faces10 = [ 3,5,4 ];  //x+
+	
+        var faces11 = [ 4,6,5 ];  //z-
+        var faces12 = [ 4,6,7 ];  //z-		
+		
+        var spec1 = {vertexArr:vertices, faceArr:faces1, color:'red', opacity: 0.5};
+ 		var spec2 = {vertexArr:vertices, faceArr:faces2, color:'red', opacity: 0.5};
+        var spec3 = {vertexArr:vertices, faceArr:faces3, color:'red', opacity: 0.5};
+ 		var spec4 = {vertexArr:vertices, faceArr:faces4, color:'red', opacity: 0.5};
+        var spec5 = {vertexArr:vertices, faceArr:faces5, color:'red', opacity: 0.5};
+ 		var spec6 = {vertexArr:vertices, faceArr:faces6, color:'red', opacity: 0.5};
+        var spec7 = {vertexArr:vertices, faceArr:faces7, color:'red', opacity: 0.5};
+ 		var spec8 = {vertexArr:vertices, faceArr:faces8, color:'red', opacity: 0.5};
+        var spec9 = {vertexArr:vertices, faceArr:faces9, color:'red', opacity: 0.5};
+ 		var spec10 = {vertexArr:vertices, faceArr:faces10, color:'red', opacity: 0.5};
+        var spec11 = {vertexArr:vertices, faceArr:faces11, color:'red', opacity: 0.5};
+ 		var spec12 = {vertexArr:vertices, faceArr:faces12, color:'red', opacity: 0.5};
+ 		
+        viewer.addCustom(spec1);
+ 		viewer.addCustom(spec2);
+        viewer.addCustom(spec3);
+ 		viewer.addCustom(spec4);
+        viewer.addCustom(spec5);
+ 		viewer.addCustom(spec6);
+        viewer.addCustom(spec7);
+ 		viewer.addCustom(spec8);
+        viewer.addCustom(spec9);
+ 		viewer.addCustom(spec10);
+        viewer.addCustom(spec11);
+ 		viewer.addCustom(spec12);
+     }
+    triangle(viewer);
+    viewer.render();  
+  
+//cubic frame
+  viewer.addSphere({ center: {x: 5.0, y: 5.0, z: 5.0}, radius: 0.01, color: 'pink' });  //1
+  viewer.addSphere({ center: {x:-5.0, y: 5.0, z: 5.0}, radius: 0.01, color: 'pink' });  //2
+  viewer.addSphere({ center: {x:-5.0, y:-5.0, z: 5.0}, radius: 0.01, color: 'pink' });  //3
+  viewer.addSphere({ center: {x: 5.0, y:-5.0, z: 5.0}, radius: 0.01, color: 'pink' });  //4
+  viewer.addSphere({ center: {x: 5.0, y:-5.0, z:-5.0}, radius: 0.01, color: 'pink' });  //5
+  viewer.addSphere({ center: {x: 5.0, y: 5.0, z:-5.0}, radius: 0.01, color: 'pink' });  //6  
+  viewer.addSphere({ center: {x:-5.0, y: 5.0, z:-5.0}, radius: 0.01, color: 'pink' });  //7
+  viewer.addSphere({ center: {x:-5.0, y:-5.0, z:-5.0}, radius: 0.01, color: 'pink' });  //8
+  
+  viewer.addLine({
+  start: {x: 5.0, y: 5.0, z: 5.0},
+  end: {x:-5.0, y: 5.0, z: 5.0},
+  color: 'gray'
+  });  //1-2
+  viewer.addLine({
+  start: {x: 5.0, y: 5.0, z: 5.0},
+  end: {x: 5.0, y:-5.0, z: 5.0},
+  color: 'gray'
+  });  //1-4
+  viewer.addLine({
+  start: {x: 5.0, y: 5.0, z: 5.0},
+  end: {x: 5.0, y: 5.0, z:-5.0},
+  color: 'gray'
+  });  //1-6
+  
+  viewer.addLine({
+  start: {x:-5.0, y: 5.0, z: 5.0},
+  end: {x:-5.0, y:-5.0, z: 5.0},
+  color: 'gray'
+  });  //2-3  
+  viewer.addLine({
+  start: {x:-5.0, y: 5.0, z: 5.0},
+  end: {x:-5.0, y: 5.0, z:-5.0},
+  color: 'gray'
+  });  //2-7   
+  
+  viewer.addLine({
+  start: {x:-5.0, y:-5.0, z: 5.0},
+  end: {x: 5.0, y:-5.0, z: 5.0},
+  color: 'gray'
+  });  //3-4      
+  viewer.addLine({
+  start: {x:-5.0, y:-5.0, z: 5.0},
+  end: {x:-5.0, y:-5.0, z:-5.0},
+  color: 'gray'
+  });  //3-8  
+
+  viewer.addLine({
+  start: {x: 5.0, y:-5.0, z: 5.0},
+  end: {x: 5.0, y:-5.0, z:-5.0},
+  color: 'gray'
+  });  //4-5   
+  
+  viewer.addLine({
+  start: {x: 5.0, y:-5.0, z:-5.0},
+  end: {x: 5.0, y: 5.0, z:-5.0},
+  color: 'gray'
+  });  //5-6  
+  viewer.addLine({
+  start: {x: 5.0, y:-5.0, z:-5.0},
+  end: {x:-5.0, y:-5.0, z:-5.0},
+  color: 'gray'
+  });  //5-8  
+  
+  viewer.addLine({
+  start: {x: 5.0, y: 5.0, z:-5.0},
+  end: {x:-5.0, y: 5.0, z:-5.0},
+  color: 'gray'
+  });  //6-7  
+  
+  viewer.addLine({
+  start: {x:-5.0, y: 5.0, z:-5.0},
+  end: {x:-5.0, y:-5.0, z:-5.0},
+  color: 'gray'
+  });  //7-8  
+  
+  viewer.addLabel("1st BZ of SC", {position: {x: 6.0, y: -6.0, z: -6.0}, backgroundColor: 0x800080, backgroundOpacity: 0.8});							  
+
+  viewer.render();  
+</script>
+		</blockquote>
+		</td>
+		
+<!--3d mol windows.-->
+		<td width="31%">
+									<p align="center">
+									<img border="0" src="kpath_sc.jpg" width="412" height="740"></p>
+									</td>
+	<td width="11%"> </td>
+</tr>
+	<tr>
+		<td width="6%" height="45"> </td>
+		<td height="45" colspan="2">
+		  <blockquote>
+			<blockquote>
+				<hr>
+				<p align="right" title="WeChat: Scott_Lv ">
+				<font face="Arial Unicode MS" color="#999999">
+				<a href="mailto:glv7@ncepu.edu.cn">Scott Lv</a><font color="#999999"> 
+			: ) ,</font> updated 2026, 08, 02</font> <font face="Arial Unicode MS" color="#999999"> 
+				<a target="_blank"  style="text-decoration: none;" href="https://net.ncepu.edu.cn/">NCEPU(BD)</a><font face="Arial, Helvetica, sans-serif">,</font></font>
+				<font face="Arial Unicode MS">
+				<a target="_blank" style="text-decoration: none;" href="http://3dmol.csb.pitt.edu/">3Dmol.js</a>,
+				<a target="_blank" style="text-decoration: none;" href="https://scott-lv.github.io/solidmol/">
+				Solidmol</a>,
+				<a target="_blank" style="text-decoration: none;" href="https://www.hep.com.cn">HEP.cn</a> ,&nbsp;
+				<a target="_blank" style="text-decoration: none;" href="http://www.moe.gov.cn/">MOE.gov.cn</a>&nbsp;&nbsp;
+				</font>
+			</blockquote>
+		  </blockquote>
+		</td>
+		<td width="11%" height="45"></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
