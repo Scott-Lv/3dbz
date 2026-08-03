@@ -1,0 +1,491 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta charset="UTF-8">
+<title> 3D Brillouin Zone of Graphite with 3Dmol.js</title>
+<script src="./3Dmol-min.js"></script>
+</head>
+
+<body>
+
+<div align="center">
+
+<table border="0" width="89%" height="866">
+	<tr>
+		<td width="6%" height="84"></td>
+		<td height="84" colspan="2">
+		<p align="center">
+		  <b>
+		  <font color="#6699FF" size="6" face="Arial Unicode MS">First&nbsp; Brillouin&nbsp; Zone&nbsp; of&nbsp; Graphite </font></b><hr color="#6699FF"></td>
+		<td width="11%" height="84"></td>
+	</tr>
+	<tr>
+		<td width="6%" height="35"></td>
+		<td height="35" bgcolor="#F5F5F5" colspan="2"><font face="Arial Unicode MS" size="5" color="#00FF00">&#10070; </font>
+		<font face="Arial Unicode MS" size="5" color="#808080">First Brillouin Zone of 
+		Graphene structure, 
+		<br>&nbsp;&nbsp;&nbsp; k points path: Gamma–M–K–Gamma,  Gamma-A  </font>
+		</td>
+		<td width="11%" height="35">
+		</td>
+	</tr>
+	<tr>
+		<td width="6%"></td>
+		<td width="57%"><font size="5" face="Arial Unicode MS"> </font>
+		<blockquote>
+<div id="container-01" class="mol-container" style="width: 989px; height: 730px"></div>
+<style>
+.mol-container {
+  width: 1000px;
+  height:1000px;
+  position: relative;
+}
+</style>
+<script>
+  let element = document.querySelector('#container-01');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+
+  // lattice 1-12
+  viewer.addSphere({ center: {x: 0.000, y: 5.000, z: 2.000}, radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("1", {position: {x: -0.200, y: 5.200, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});
+  	
+  viewer.addSphere({ center: {x: 4.330, y: 2.500, z: 2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("2", {position: {x: 4.330, y: 2.500, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});
+  	
+  viewer.addSphere({ center: {x: 4.330, y:-2.500, z: 2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("3", {position: {x: 4.330, y:-2.500, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+   
+  viewer.addSphere({ center: {x: 0.000, y:-5.000, z: 2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("4", {position: {x: 0.000, y:-5.000, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+  
+  viewer.addSphere({ center: {x:-4.330, y:-2.500, z: 2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("5", {position: {x:-4.530, y:-2.500, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+  
+  viewer.addSphere({ center: {x:-4.330, y: 2.500, z: 2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("6", {position: {x:-4.630, y: 2.700, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+  
+  viewer.addSphere({ center: {x: 0.000, y: 5.000, z:-2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("7", {position: {x: 0.000, y: 5.200, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+   
+  viewer.addSphere({ center: {x: 4.330, y: 2.500, z:-2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("8", {position: {x: 4.530, y: 2.700, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+ 
+  viewer.addSphere({ center: {x: 4.330, y:-2.500, z:-2.000},radius: 0.02, color: 'red' });
+//  viewer.addLabel("9", {position: {x: 4.330, y:-2.500, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});
+  	
+  viewer.addSphere({ center: {x: 0.000, y:-5.000, z:-2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("10", {position: {x: 0.000, y:-5.000, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+  
+  viewer.addSphere({ center: {x:-4.330, y:-2.500, z:-2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("11", {position: {x:-4.530, y:-2.700, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});	
+ 
+  viewer.addSphere({ center: {x:-4.330, y: 2.500, z:-2.000},radius: 0.02, color: '0xaabbcc' });
+//  viewer.addLabel("12", {position: {x:-4.830, y: 2.000, z:-2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: '0xeeeeef',fontSize: 12});
+  
+  viewer.addCylinder({start:{x: 0.000, y: 5.000, z: 2.000}, 
+                              end:{x: 4.330, y: 2.500, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //1-2
+							  
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z: 2.000},
+                              end:{x: 4.330, y:-2.500, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //2-3
+							  
+viewer.addCylinder({start:{x: 4.330, y:-2.500, z: 2.000},
+                              end:{x: 0.000, y:-5.000, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //3-4
+							  
+viewer.addCylinder({start:{x: 0.000, y:-5.000, z: 2.000},
+                              end:{x:-4.330, y:-2.500, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //4-5
+							  
+viewer.addCylinder({start:{x:-4.330, y:-2.500, z: 2.000},
+                              end:{x:-4.330, y: 2.500, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //5-6
+							  
+viewer.addCylinder({start:{x:-4.330, y: 2.500, z: 2.000},
+                              end:{x: 0.000, y: 5.000, z: 2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //6-1
+							  
+viewer.addCylinder({start:{x: 0.000, y: 5.000, z:-2.000},
+                              end:{x: 4.330, y: 2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //7-8
+
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z:-2.000},
+                              end:{x: 4.330, y:-2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //8-9
+							  
+ viewer.addCylinder({start:{x: 4.330, y:-2.500, z:-2.000},
+                              end:{x: 0.000, y:-5.000, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //9-10
+							  
+ viewer.addCylinder({start:{x: 0.000, y:-5.000, z:-2.000},
+                              end:{x:-4.330, y:-2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //10-11
+							  
+ viewer.addCylinder({start:{x:-4.330, y:-2.500, z:-2.000},
+                              end:{x:-4.330, y: 2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //11-12
+							  
+ viewer.addCylinder({start:{x:-4.330, y: 2.500, z:-2.000},
+                              end:{x: 0.000, y: 5.000, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //12-7
+							  
+ viewer.addCylinder({start:{x: 0.000, y: 5.000, z: 2.000},
+                              end:{x: 0.000, y: 5.000, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //1-7
+							  
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z: 2.000},
+                              end:{x: 4.330, y: 2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //2-8
+							  
+ viewer.addCylinder({start:{x: 4.330, y:-2.500, z: 2.000},
+                              end:{x: 4.330, y:-2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //3-9
+							  
+  viewer.addCylinder({start:{x: 0.000, y:-5.000, z: 2.000},
+                              end:{x: 0.000, y:-5.000, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //4-10
+							  
+  viewer.addCylinder({start:{x:-4.330, y:-2.500, z: 2.000},
+                              end:{x:-4.330, y:-2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //5-11
+							  
+  viewer.addCylinder({start:{x:-4.330, y: 2.500, z: 2.000},
+                              end:{x:-4.330, y: 2.500, z:-2.000},
+                              radius:0.005,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //6-12
+							  
+ viewer.render();
+ 
+ viewer.addLabel("x", {position: {x:5.000, y:0.000, z:0.00}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 16});
+//coordinates axis
+    viewer.addLine({                                                   //i axis
+	                start: {x:-6.000, y: 0.000, z: 0.000},
+                    end: {x: 6.000, y: 0.000, z: 0.000},
+                    color: 'green', dashed: true
+                    }); 
+
+
+ viewer.addLabel("y", {position: {x: 0.000, y: 5.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'green',fontSize: 16});
+    viewer.addLine({                                                   //j axis
+                    start: {x: 0.000, y: 6.000, z: 0.000},
+                    end: {x: 0.000, y:-6.000, z: 0.000},
+                    color: 'green', dashed: true
+                    });
+
+
+ viewer.addLabel("z", {position: {x: 0.000, y: 0.000, z: 6.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'green',fontSize: 16});
+    viewer.addLine({                                                   //j axis
+                    start: {x: 0.000, y: 0.000, z:-6.000},
+                    end: {x: 0.000, y: 0.000, z: 6.000},
+                    color: 'green', dashed: true
+                    });
+
+ viewer.addLabel("b1", {position: {x: 4.330, y: 7.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+ viewer.addLabel("b2", {position: {x: 4.330, y:-7.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'green',fontSize: 20});
+ viewer.addLabel("b3", {position: {x: 0.200, y: 0.200, z: 5.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'blue',fontSize: 20});
+ 
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 3.464, y: 6.000, z: 0.000},
+                              radius:0.05,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //b1-cylinder
+ viewer.addArrow({
+   start: {x: 3.464, y: 6.000, z: 0.000},
+   end: {x: 4.330, y:7.500, z: 0.000},
+   color: 'red',
+   radius: 0.05,
+    fromCap: 1,
+    toCap: 1
+ });                                               //b1-arrow
+
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 3.464, y: -6.000, z: 0.000},
+                              radius:0.05,
+                              color:'lightgreen',
+                              fromCap:false,
+                              toCap:false});      //b2-cylinder
+ viewer.addArrow({
+   start: {x: 3.464, y: -6.000, z: 0.000},
+   end: {x: 4.330, y:-7.500, z: 0.000},
+   color: 'lightgreen',
+   radius: 0.05,
+    fromCap: 1,
+    toCap: 1
+ });                                               //b2-arrow
+ 
+
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 0.000, y: 0.000, z: 4.000},
+                              radius:0.05,
+                              color:'blue',
+                              fromCap:false,
+                              toCap:false});      //b3-cylinder
+   viewer.addArrow({
+   start: {x: 0.000, y: 0.000, z: 4.000},
+   end: {x: 0.000, y: 0.000, z: 6.000},
+   color: 'blue',
+   radius: 0.05,
+    fromCap: 1,
+    toCap: 1
+ });                                               //b3-arrow
+
+ viewer.render();
+
+ //add plane
+function triangle(viewer) {
+        var vertices = [];
+        var normals = [];
+//        var colors = [];
+
+        //triangle
+        vertices.push(new $3Dmol.Vector3(  0.000,  5.000,  2.000));     //0, i.e.1
+        vertices.push(new $3Dmol.Vector3(  4.330,  2.500,  2.000));     //1, i.e.2
+        vertices.push(new $3Dmol.Vector3(  4.330, -2.500,  2.000));     //2, i.e.3
+        vertices.push(new $3Dmol.Vector3(  0.000, -5.000,  2.000));     //3, i.e.4
+        vertices.push(new $3Dmol.Vector3( -4.330, -2.500,  2.000));     //4, i.e.5
+        vertices.push(new $3Dmol.Vector3( -4.330,  2.500,  2.000));     //5, i.e.6
+        vertices.push(new $3Dmol.Vector3(  0.000,  5.000, -2.000));     //6, i.e.7
+        vertices.push(new $3Dmol.Vector3(  4.330,  2.500, -2.000));     //7, i.e.8
+        vertices.push(new $3Dmol.Vector3(  4.330, -2.500, -2.000));     //8, i.e.9
+        vertices.push(new $3Dmol.Vector3(  0.000, -5.000, -2.000));     //9, i.e.10
+        vertices.push(new $3Dmol.Vector3( -4.330, -2.500, -2.000));     //10, i.e.11
+        vertices.push(new $3Dmol.Vector3( -4.330,  2.500, -2.000));     //11, i.e.12
+
+        var faces1 = [ 0,1,2];  
+        var faces2 = [ 0,2,3]; 
+        var faces3 = [ 0,3,4]; 
+        var faces4 = [ 0,4,5]; 	
+		
+        var faces5 = [6,7, 8 ];  
+        var faces6 = [6,8, 9 ]; 
+		var faces7 = [6,9, 10];  
+        var faces8 = [6,10,11];  
+		
+        var faces9 =  [0,1,6];  
+        var faces10 = [7,1,6];  
+	
+        var faces11 = [1,7,2];  
+        var faces12 = [8,7,2];  
+		
+  		var faces13 = [2,8,3];
+		var faces14 = [9,8,3]; 	
+		
+        var faces15 = [3,9,4];  
+        var faces16 = [10,9,4];  
+		
+        var faces17=  [4,10,5];  
+        var faces18 = [11,10,5];  
+		
+        var faces19 = [5,0,11];  
+        var faces20 = [6,0,11];   
+		
+        var spec1 = {vertexArr:vertices, faceArr:faces1, color:'red', opacity: 0.5};
+ 		var spec2 = {vertexArr:vertices, faceArr:faces2, color:'red', opacity: 0.5};
+        var spec3 = {vertexArr:vertices, faceArr:faces3, color:'red', opacity: 0.5};
+ 		var spec4 = {vertexArr:vertices, faceArr:faces4, color:'red', opacity: 0.5};
+        var spec5 = {vertexArr:vertices, faceArr:faces5, color:'red', opacity: 0.5};
+ 		var spec6 = {vertexArr:vertices, faceArr:faces6, color:'red', opacity: 0.5};
+        var spec7 = {vertexArr:vertices, faceArr:faces7, color:'red', opacity: 0.5};
+ 		var spec8 = {vertexArr:vertices, faceArr:faces8, color:'red', opacity: 0.5};
+        var spec9 = {vertexArr:vertices, faceArr:faces9, color:'red', opacity: 0.5};
+ 		var spec10 = {vertexArr:vertices, faceArr:faces10, color:'red', opacity: 0.5};
+        var spec11 = {vertexArr:vertices, faceArr:faces11, color:'red', opacity: 0.5};
+ 		var spec12 = {vertexArr:vertices, faceArr:faces12, color:'red', opacity: 0.5};
+ 		var spec13 = {vertexArr:vertices, faceArr:faces13, color:'red', opacity: 0.5};
+ 		var spec14= {vertexArr:vertices, faceArr:faces14, color:'red', opacity: 0.5};
+        var spec15= {vertexArr:vertices, faceArr:faces15, color:'red', opacity: 0.5};
+ 		var spec16= {vertexArr:vertices, faceArr:faces16, color:'red', opacity: 0.5};
+        var spec17= {vertexArr:vertices, faceArr:faces17, color:'red', opacity: 0.5};
+ 		var spec18 = {vertexArr:vertices, faceArr:faces18, color:'red', opacity: 0.5};
+        var spec19 = {vertexArr:vertices, faceArr:faces19, color:'red', opacity: 0.5};
+ 		var spec20 = {vertexArr:vertices, faceArr:faces20, color:'red', opacity: 0.5};
+		
+        viewer.addCustom(spec1);
+ 		viewer.addCustom(spec2);
+        viewer.addCustom(spec3);
+ 		viewer.addCustom(spec4);
+        viewer.addCustom(spec5);
+ 		viewer.addCustom(spec6);
+        viewer.addCustom(spec7);
+ 		viewer.addCustom(spec8);
+        viewer.addCustom(spec9);
+ 		viewer.addCustom(spec10);
+        viewer.addCustom(spec11);
+ 		viewer.addCustom(spec12);
+		viewer.addCustom(spec13);
+		viewer.addCustom(spec14);
+        viewer.addCustom(spec15);
+ 		viewer.addCustom(spec16);
+        viewer.addCustom(spec17);
+ 		viewer.addCustom(spec18);
+        viewer.addCustom(spec19);
+ 		viewer.addCustom(spec20);
+		
+     }
+    triangle(viewer);
+  viewer.zoomTo();
+  viewer.render();
+
+//k-path
+  viewer.addSphere({ center: {x: 0.000, y: 0.000, z: 0.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("Gamma", {position: {x:-0.200, y:-0.200, z:0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+  
+  viewer.addSphere({ center: {x: 0.000, y: 0.000, z: 2.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("A", {position: {x: 0.000, y: 0.000, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+  
+  viewer.addSphere({ center: {x: 4.330, y: 0.000, z: 2.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("L", {position: {x: 4.330, y: 0.000, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+  
+  viewer.addSphere({ center: {x: 4.330, y: 0.000, z: 0.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("M", {position: {x: 4.330, y: 0.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+  
+  viewer.addSphere({ center: {x: 4.330, y: 2.500, z: 0.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("K", {position: {x: 4.330, y: 2.500, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});  
+  
+  viewer.addSphere({ center: {x: 4.330, y: 2.500, z: 2.000},radius: 0.02, color: 'red' });
+  viewer.addLabel("H", {position: {x: 4.330, y: 2.500, z: 2.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
+  
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 4.330, y: 0.000, z: 0.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //gamma-M
+ viewer.addCylinder({start:{x: 4.330, y: 0.000, z: 0.000},
+                              end:{x: 4.330, y: 2.500, z: 0.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //M-K
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z: 0.000},
+                              end:{x: 0.000, y: 0.000, z: 0.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //K-Gamma
+							  
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 2.000},
+                              end:{x: 4.330, y: 0.000, z: 2.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //A-L
+ viewer.addCylinder({start:{x: 4.330, y: 0.000, z: 2.000},
+                              end:{x: 4.330, y: 2.500, z: 2.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //L-H
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z: 2.000},
+                              end:{x: 0.000, y: 0.000, z: 2.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //H-A
+							  
+ viewer.addCylinder({start:{x: 4.330, y: 0.000, z: 2.000},
+                              end:{x: 4.330, y: 0.000, z: 0.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //L-M
+ viewer.addCylinder({start:{x: 4.330, y: 2.500, z: 2.000},
+                              end:{x: 4.330, y: 2.500, z: 0.000},
+                              radius:0.01,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //H-K
+viewer.addLabel("1st BZ of graphite", {position: {x: 6.0, y: -6.0, z:-3.0}, backgroundColor: 0x800080, backgroundOpacity: 0.8});							  							  
+  viewer.render();
+  
+  viewer.zoom(0.8, 1000);
+
+</script>
+		</blockquote>
+		</td>
+<!--3d mol windows.-->
+		<td width="31%"><p align="center"><img border="0" src="graphite.jpg" width="400" height="729"></p></td>
+	<td width="11%"> </td>
+</tr>
+	<tr>
+		<td width="6%" height="45"> </td>
+		<td height="45" colspan="2">
+		  <blockquote>
+			<blockquote>
+				<hr>
+				<p align="right" title="WeChat: Scott_Lv ">
+				<font face="Arial Unicode MS" color="#999999">
+				Maintained by <a href="mailto:15886619692@163.com">Lu Huang</a>, 
+				<a href="mailto:1963931662@qq.com">Yutong Tang</a>, <a href="mailto:glv7@ncepu.edu.cn">Scott Lv</a><font color="#999999"> 
+			: ) ,</font> updated 2026, 08, 02,</font> <font face="Arial Unicode MS" color="#999999"> 
+				<a target="_blank"  style="text-decoration: none;" href="https://net.ncepu.edu.cn/">NCEPU(BD)</a></font><font face="Arial Unicode MS">;
+				</font>
+			</blockquote>
+		  </blockquote>
+		</td>
+		<td width="11%" height="45"></td>
+	</tr>
+</table>
+
+</div>
+
+</body>
+
+</html>
