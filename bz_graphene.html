@@ -130,34 +130,54 @@
                     });
 
  viewer.addLabel("b1", {position: {x:4.330, y:7.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'red',fontSize: 20});
- viewer.addArrow({
-   start: {x: 0.000, y: 0.000, z: 0.000},
-   end: {x: 4.330, y:7.500, z: 0.000},
-   color: 'blue',
-   radius: 0.05,
-    fromCap: 1,
-    toCap: 1
- });
-
  viewer.addLabel("b2", {position: {x: 4.330, y:-7.000, z: 0.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'green',fontSize: 20});
-  viewer.addArrow({
-   start: {x: 0.000, y: 0.000, z: 0.000},
-   end: {x: 4.330, y:-7.500, z: 0.000},
-   color: 'blue',
+ viewer.addLabel("b3", {position: {x:0.200, y:0.200, z:5.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'blue',fontSize: 20});
+
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 3.464, y: 6.000, z: 0.000},
+                              radius:0.05,
+                              color:'red',
+                              fromCap:false,
+                              toCap:false});      //b1-cylinder
+ viewer.addArrow({
+   start: {x: 3.464, y: 6.000, z: 0.000},
+   end: {x: 4.330, y:7.500, z: 0.000},
+   color: 'red',
    radius: 0.05,
     fromCap: 1,
     toCap: 1
- });
+ });                                               //b1-arrow
+
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 3.464, y: -6.000, z: 0.000},
+                              radius:0.05,
+                              color:'lightgreen',
+                              fromCap:false,
+                              toCap:false});      //b2-cylinder
+ viewer.addArrow({
+   start: {x: 3.464, y: -6.000, z: 0.000},
+   end: {x: 4.330, y:-7.500, z: 0.000},
+   color: 'lightgreen',
+   radius: 0.05,
+    fromCap: 1,
+    toCap: 1
+ });                                               //b2-arrow
  
- viewer.addLabel("b3", {position: {x:0.200, y:0.200, z:5.000}, backgroundColor: 0xeeeeee, backgroundOpacity: 0.1,fontColor: 'blue',fontSize: 20});
+
+ viewer.addCylinder({start:{x: 0.000, y: 0.000, z: 0.000},
+                              end:{x: 0.000, y: 0.000, z: 4.000},
+                              radius:0.05,
+                              color:'blue',
+                              fromCap:false,
+                              toCap:false});      //b3-cylinder
    viewer.addArrow({
-   start: {x: 0.000, y: 0.000, z: 0.000},
+   start: {x: 0.000, y: 0.000, z: 4.000},
    end: {x: 0.000, y: 0.000, z: 6.000},
    color: 'blue',
    radius: 0.05,
     fromCap: 1,
     toCap: 1
- });
+ });                                               //b3-arrow
  viewer.render();
  
  //plane, Brillouin Zone
